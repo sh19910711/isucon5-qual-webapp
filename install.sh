@@ -1,5 +1,5 @@
 echo create database isucon5q | mysql -uroot
-mysql -uroot < sql/schema.sql
+mysql -uroot isucon5q < sql/schema.sql
 
 cd script
 bundle install -j4
