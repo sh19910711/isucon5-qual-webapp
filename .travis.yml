@@ -1,0 +1,13 @@
+language: go
+go: 1.7
+
+install:
+  - go get .
+
+script:
+  - make
+
+  - ./app &
+  - sleep 3
+
+  - curl http://localhost:8000
