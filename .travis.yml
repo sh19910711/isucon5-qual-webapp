@@ -2,6 +2,9 @@ language: go
 go: 1.7
 
 install:
+  - rvm install 2.3.1 --install --fuzzy --binary
+  - ruby --version
+
   - go get .
   - sh install.sh
 
